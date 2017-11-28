@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Email form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        Brian Sutachan
+        <a href="#">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="about.html">About Me</a>
+    </header>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <form action="http://fvi-grad.com:4004/email" method="POST">
+            <input placeholder="Destination Email" type="text" name="dest_email">
+            <input placeholder="Full Name" type="text" name="full_name">
+            <input placeholder="Phone" type="text" name="phone_num">
+            <input placeholder="Date" type="text" name="date">
+            <input placeholder="Time" type="text" name="time">
+            <input placeholder="bsutachan@techlaunch.io" type="text" name="send_email">
+            <input placeholder="Subject" type="text" name="subject">
+            <textarea placeholder="Enter email body here" name="message" id="" cols="30" rows="10"></textarea> 
+            <input type="submit" name="submit" value="Finish Email">
+        </form>
+    </div>
+    
+    <footer>
+        Brian Sutachan email: bsutachan@techlaunch.io
+    </footer>
+</body>
+</html>
